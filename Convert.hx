@@ -1,5 +1,3 @@
-using tink.CoreApi;
-
 @:keep
 class Convert extends hxd.fs.Convert
 {
@@ -15,7 +13,6 @@ class Convert extends hxd.fs.Convert
     }
 
     override function convert() {
-        image.Image.getInfo(srcPath);
         save(haxe.io.Bytes.alloc(0));
     }
 }
